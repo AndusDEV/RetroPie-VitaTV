@@ -5,7 +5,7 @@ This will help you turn a modded Vita into a VitaTV
 _( You don't need to install them yourself now. The guide will walk you through step-by-step :) )_
 ## Required:
  - [Vita UDCD UVC](https://github.com/xerpi/vita-udcd-uvc) by xerpi - Allows streaming the PS Vita through a USB cable.
- - [ds4vita](https://github.com/xerpi/ds4vita) by xerpi - Allows using DualShock 4 through Bluetooth with Vita. _(Probably needed)_
+ - [ds4vita](https://github.com/xerpi/ds4vita) or [ds3vita](https://github.com/xerpi/ds3vita) by xerpi - Allows using DualShock 4/3 through Bluetooth with Vita. _(Choose which controller you have)_
 ## Optional:
  - [MiniVitaTV](https://github.com/TheOfficialFloW/MiniVitaTV) by TheFloW - Tricks Vita into thinking that it's actually a VitaTV. You can play local multiplayer games but it's buggy and unsupported.
 
@@ -14,19 +14,19 @@ _( You don't need to install them yourself now. The guide will walk you through 
 On the Vita you just need to install some plugins and restart the console.
 You can do it in 2 ways:
 ### AutoPlugin II (Or apps similar to this):
- 1. Search and install udcd-uvc, ds4vita, and MiniVitaTV
+ 1. Search and install udcd-uvc, ds4/3vita, and MiniVitaTV.
  2. Reboot the console, and you're done here.
 ### Manually:
 #### 1. udcd-uvc:
-  - Download udcd_uvc.skprx from [here](https://github.com/xerpi/vita-udcd-uvc/releases)
+  - Download udcd_uvc.skprx from [here](https://github.com/xerpi/vita-udcd-uvc/releases).
   - Copy that file onto your Vita's SD Card to: `ur0:tai`
-#### 2. ds4vita:
-  - Download ds4vita.skprx from [here](https://github.com/xerpi/ds4vita/releases)
-  - Copy it to the same folder as previously
+#### 2. ds4/3vita:
+  - Download ds4vita.skprx from [here](https://github.com/xerpi/ds4vita/releases) or ds3vita.skprx from [here](https://github.com/xerpi/ds3vita/releases).
+  - Copy it to the same folder as previously.
 #### 3. MiniVitaTV _(optionally)_:
-  - Download ds3.skprx and minivitatv.skprx from [here](https://github.com/TheOfficialFloW/MiniVitaTV/releases)
-  - _(I'm not sure if you can use ds4vita and ds3 together, I had problems with my DS4 when using both)_
-  - Copy both files to the same folder as previously
+  - Download ds3.skprx and minivitatv.skprx from [here](https://github.com/TheOfficialFloW/MiniVitaTV/releases).
+  - _(I'm not sure if you can use ds4/3vita and ds3 together, I had problems with my DS4 when using both)_
+  - Copy both files to the same folder as previously.
 #### 4. Installing:
   - Open your taiHEN config file (probably `ur0:tai/config.txt`) using app like [VitaShell](https://github.com/TheOfficialFloW/VitaShell):
     - Add udcd_uvc under `*KERNEL` section with a line like this: `ur0:tai/udcd_uvc.skprx`
@@ -37,6 +37,10 @@ You can do it in 2 ways:
     ur0:tai/ds3.skprx
     ```
   - Reboot your console and it should work as intended!
+#### 5. Connecting DualShock:
+  - Open Settings app on your Vita.
+  - Go to `Devices > Bluetooth Devices` and find your controller here.
+  - After connecting it once, you can press PS button on your controller to connect it anytime without going into settings.
 ## RetroPie Setup:
  - [Connect to your RetroPie through SSH](https://retropie.org.uk/docs/SSH/)
  - Install mpv using `sudo apt-get install mpv`
@@ -52,6 +56,7 @@ You can do it in 2 ways:
   - Exit the SSH session.
   - Restart EmulationStation or the whole system.
 ## Usage:
+  - Connect your DualShock controller with Vita. _(PS button if you've already connected it once)_
   - Connect Vita to your Raspberry Pi using an USB cable.
   - Find and run the script you've just made _(`Vita.sh`, should show as `Vita`)_
   - You should now see your Vita screen!
