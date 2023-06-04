@@ -8,7 +8,7 @@ _( You don't need to install them yourself now. The guide will walk you through 
  - [ds4vita](https://github.com/xerpi/ds4vita) or [ds3vita](https://github.com/xerpi/ds3vita) by xerpi - Allows using DualShock 4/3 through Bluetooth with Vita. _(Choose which controller you have)_
 ## Optional:
  - [MiniVitaTV](https://github.com/TheOfficialFloW/MiniVitaTV) by TheFloW - Tricks Vita into thinking that it's actually a VitaTV. You can play local multiplayer games but it's buggy and unsupported.
- - For the audio to work you need to connect Jack to Jack cable from Vita to your TV/Monitor.
+ - For the audio to work you need to connect Jack to Jack cable from Vita to your TV/Monitor/Speakers.
 
 # Instructions:
 ## Vita Setup:
