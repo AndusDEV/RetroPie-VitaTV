@@ -1,6 +1,10 @@
 # RetroPie VitaTV
 This will help you turn a modded Vita into a VitaTV
 
+# Downsides:
+ - You're using other controller than the one connected to RetroPie.
+ - Resolution is still the same as on Vita.
+
 # Requirements:
 _( You don't need to install them yourself now. The guide will walk you through step-by-step :) )_
 ## Required:
@@ -59,7 +63,7 @@ You can do it in 2 ways:
 ## Usage:
   - Connect your DualShock controller with Vita. _(PS button if you've already connected it once)_
   - Connect Vita to your Raspberry Pi using an USB cable.
-  - Find and run the script you've just made _(`Vita.sh`, should show as `Vita`)_
+  - Find and run the script you've just made _(`Vita.sh`, should show as `Vita` in EmulationStation)_
   - You should now see your Vita screen!
   - If you want to exit it use `Q` on a keyboard connected to your Pi.
 # You're done!
